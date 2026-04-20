@@ -73,7 +73,7 @@
   padding: 1.25rem 1.25rem 2rem;
   background: #fff;
   overflow-y: auto;
-  transform: translateX(100%);
+  transform: translateX(-100%);
   transition:
     transform 0.2s ease,
     visibility 0.2s ease;
@@ -125,7 +125,7 @@
   text-decoration: underline;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 749px) {
   .bar {
     transition:
       transform 0.22s ease,
@@ -133,23 +133,25 @@
   }
 }
 
-@media screen and (min-width: 751px) {
+@media screen and (min-width: 750px) {
   .dashboardHeaderContainer {
     height: 100%;
     border: 1px solid #dfe4e7;
     max-width: 250px;
     flex-flow: column nowrap;
+    gap: 0;
   }
 
   .dashboardHeader {
     height: 3.75rem;
     position: relative;
+    border-bottom: 1px solid #dfe4e7;
   }
 
   .dashboardHeader::after {
     content: "";
     position: absolute;
-    bottom: -1rem;
+    bottom: 0;
     left: 50%;
     border: 1px solid #dfe4e7;
     width: calc(100% + 2rem);
@@ -167,11 +169,13 @@
 
   .hamburgerMenuContent {
     position: static;
-    transform: translateX(0);
-    visibility: visible;
     pointer-events: auto;
     width: 100%;
-    height: calc(100% - 3rem);
-    padding: 1rem 0 0;
+    height: calc(100% - 5.75rem);
+    padding: 0;
+    overflow: unset;
+    transform: unset;
+    transition: unset;
+    visibility: visible;
   }
 }
