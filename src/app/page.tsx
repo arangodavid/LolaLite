@@ -1,5 +1,6 @@
 import Link from "next/link";
-import HeaderNavContainer from "../components/header/HeaderNavContainer";
+import HeaderNavContainer from "../components/headerNav/HeaderNavContainer";
+import PreferencesContainer from "../components/preferences/PreferencesContainer";
 import styles from "./page.module.css";
 
 const Dashboard = () => {
@@ -7,7 +8,7 @@ const Dashboard = () => {
     <main className={styles.dashboardMain}>
       <HeaderNavContainer />
       <section className={styles.dashboardContent}>
-        <section className={styles.preferences}>Preferences(placeholder)</section>
+        <PreferencesContainer />
         <Link className={styles.ctas} href="/upload-travels">
           + Add to your travels
         </Link>
