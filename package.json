@@ -6,10 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "lint:fix": "eslint --fix",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
-    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,md}\""
+    "lint": "biome lint . && node -e \"console.log('Biome lint passed')\"",
+    "lint:fix": "biome lint --write . && node -e \"console.log('Biome lint fix completed')\"",
+    "format": "biome format --write . && node -e \"console.log('Biome format completed')\"",
+    "format:check": "biome check . --linter-enabled=false --assist-enabled=false && node -e \"console.log('Biome format check passed')\""
   },
   "dependencies": {
     "next": "16.2.4",
@@ -17,11 +17,10 @@
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.4.12",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.2.4",
     "typescript": "^5"
   }
 }
