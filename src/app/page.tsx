@@ -1,5 +1,6 @@
 import Link from "next/link";
 import HeaderNavContainer from "../components/headerNav/HeaderNavContainer";
+import RecentMemoriesContainer from "../components/memories/RecentMemoriesContainer";
 import PreferencesContainer from "../components/preferences/PreferencesContainer";
 import styles from "./page.module.css";
 
@@ -12,7 +13,7 @@ const Dashboard = () => {
         <Link className={styles.ctas} href="/upload-travels">
           + Add to your travels
         </Link>
-        <section className={styles.recentMemories}>Recent memories(placeholder)</section>
+        <RecentMemoriesContainer />
       </section>
     </main>
   );
