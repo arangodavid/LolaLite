@@ -44,9 +44,9 @@ const ICON_BY_KIND: Record<MemoryKind, ReactNode> = {
 
 const MemoryItem = ({ item }: MemoryItemProps) => {
   return (
-    <li className={styles.card}>
+    <li className={styles.recentMemoriesItem}>
       <span className={styles.iconWrap}>{ICON_BY_KIND[item.kind]}</span>
-      <p className={styles.text}>{item.text}</p>
+      <p className={styles.recentMemoriesItemText}>{item.text}</p>
     </li>
   );
 };

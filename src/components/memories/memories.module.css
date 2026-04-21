@@ -19,7 +19,7 @@
   list-style: none;
 }
 
-.card {
+.recentMemoriesItem {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -46,7 +46,7 @@
   height: 1.375rem;
 }
 
-.text {
+.recentMemoriesItemText {
   margin: 0;
   font-size: 0.9375rem;
   line-height: 1.35;
