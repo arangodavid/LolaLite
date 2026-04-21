@@ -4,11 +4,12 @@
   width: 100%;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   background-color: #f7f7f2;
   border: 2px solid #dfe4e7;
   border-radius: 4px;
   padding: 0 0 2rem 0;
+  height: 100vh;
 }
 
 .dashboardHeader {
@@ -26,14 +27,6 @@
   gap: 16px;
   width: 100%;
   padding: 1rem;
-}
-
-.recentMemories {
-  border: 1px solid #dfe4e7;
-  background-color: #e5e9ec;
-  padding: 1rem;
-  height: 300px;
-  border-radius: 4px;
 }
 
 .ctas {
