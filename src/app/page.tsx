@@ -10,7 +10,7 @@ const Dashboard = () => {
       <HeaderNavContainer />
       <section className={styles.dashboardContent}>
         <PreferencesContainer />
-        <Link className={styles.ctas} href="/upload-travels">
+        <Link className={styles.ctas} href="/share-a-travel-detail">
           + Add to your travels
         </Link>
         <RecentMemoriesContainer />
